@@ -1,0 +1,83 @@
+.sidebar{
+   /* border: 1px solid red;  */
+}
+.sidebar {
+  width: 300px;
+  min-height: 100vh;
+  padding: 25px 22px;
+  /* background: linear-gradient(90deg, #FF930F, #FFF95B); */
+  /* background: #a2cecd; */
+  background: linear-gradient(
+  90deg,
+  rgba(246, 207, 190, 0.65),
+  rgba(185, 220, 242, 0.65)
+);
+  /* opacity: 0.6; */
+  /* color: white; */
+  color:#364a6a;
+  /* font-size: 20px; */
+  /* color: #00B9E8; */
+  box-shadow: 4px 0 15px rgba(0, 0, 0, 0.15);
+  box-sizing: border-box;
+}
+
+/* .sidebar h3 {
+  font-size: 20px;
+  margin-bottom: 25px;
+  margin-left: 25px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: #0e7f85;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  padding-bottom: 10px;
+} */
+ .sidebar-heading {
+    font-size: 20px;
+    margin-bottom: 25px;
+  /* margin-left: 65px; */
+  display: flex;
+  align-items: center;   /* vertical center */
+  gap: 8px;              /* icon aur text ke beech distance */
+  font-weight: 600;
+}
+
+/* Agar thoda aur niche chahiye icon */
+.sidebar-heading .sidebar-icon {
+  margin-top: 2px;
+  /* transform: translateY(2px); */
+}
+
+.sidebar div {
+    margin-left: 10px;
+  padding: 10px 14px;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  font-size: 17px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sidebar-text{
+    background: linear-gradient(90deg, #432371, #FAAE7B);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* .sidebar div:hover {
+  background: rgba(255, 255, 255, 0.08);
+
+} */
+
+.sidebar .active {
+  background: linear-gradient(90deg, #FF0F7B, #F89B29);
+  color: white;
+  font-weight: 600;
+  box-shadow: 0 4px 10px rgba(99, 102, 241, 0.4);
+}
+
+.sidebar div span {
+  font-size: 12px;
+  opacity: 0.7;
+}

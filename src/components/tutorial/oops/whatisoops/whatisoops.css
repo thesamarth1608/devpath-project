@@ -1,0 +1,136 @@
+.contentArea{
+    flex: 1;
+  padding: 50px;
+  background: #FFFAFA;
+}
+/* .contentArea h2{
+    color: #2f215f;
+  font-weight: 600;
+  font-size: 28px;
+  margin-bottom: 20px;
+} */
+.oops-heading{
+ color: #2f215f;
+  font-weight: 600;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+.oops-def{
+    /* font-size: 16px; */
+    color: #6B7280;
+    line-height: 2;
+
+}
+.oops-img-container-1{
+   margin-left: 20%;
+   margin-top: 5%;
+
+}
+.oops-img-container-1 img{
+    border-radius: 50%;
+}
+.oops-list-1{
+    list-style: decimal;
+    line-height: 2;
+    color: #6B7280;
+}
+.whyoops{
+    margin-top: 5%;
+}
+.whatoops{
+   margin-top: 5%;
+}
+.oops-list-2{
+    list-style-type: circle;
+    line-height: 2;
+    color: #6B7280;
+}
+/* From Uiverse.io by Madflows */ 
+.state-action{
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+
+/* From Uiverse.io by alexmaracinaru */ 
+/* CTA Button Base */
+.cta {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 22px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  overflow: hidden;
+  transition: transform 0.2s ease;
+}
+
+/* Background animation layer */
+.cta:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 50px;
+  background: linear-gradient(90deg, #FF0F7B, #F89B29); /* success green */
+  
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s ease;
+  z-index: 0;
+}
+
+/* Text style */
+.cta span {
+  position: relative;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  color: #234567;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  z-index: 1;
+  transition: color 0.3s ease;
+}
+
+/* SVG style */
+.cta svg {
+  position: relative;
+  fill: none;
+  stroke: #234567;
+  stroke-width: 2;
+  z-index: 1;
+  transition: stroke 0.3s ease;
+}
+
+/* Hover effect (only scale) */
+.cta:hover {
+  transform: scale(1.05);
+}
+
+/* Click effect */
+.cta:active {
+  transform: scale(0.95);
+}
+
+/* ✅ Completed State */
+.cta.completed:before {
+  transform: scaleX(1);
+}
+
+/* Text + icon color when completed */
+.cta.completed span {
+  color: white;
+}
+
+.cta.completed svg {
+  stroke: white;
+}

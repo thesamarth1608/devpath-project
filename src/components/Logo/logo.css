@@ -1,0 +1,41 @@
+ .logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  line-height: 1;
+}
+ .devpath-text span{
+  /* font-size: 64px; */
+  font-weight: 600;
+  background: linear-gradient(
+    90deg,
+    #ff4d8d,
+    #ff7a18,
+    #ffb347,
+    #ff4d8d
+  );
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: candyFlow 4s ease-in-out infinite;
+}
+
+@keyframes candyFlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* .devpath-icon {
+  filter:
+    drop-shadow(0 0 6px rgba(139, 47, 91, 0.35))
+    drop-shadow(0 0 14px rgba(43, 15, 30, 0.45));
+} */
+.devpath-icon {
+  /* width: 56px;
+  height: 56px; */
+  display: block;          /* IMPORTANT */
+  overflow: visible;       /* stroke cut na ho */
+  /* filter: drop-shadow(0 4px 10px rgba(15, 23, 42, 0.35)); */
+}
+

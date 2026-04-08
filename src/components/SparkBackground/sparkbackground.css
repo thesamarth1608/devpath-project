@@ -1,0 +1,51 @@
+.spark-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  /* background-color: #ededeb; */
+  /* background-color: #EAE9E3; */
+  background-color: black;
+}
+.spark {
+  /* bottom: -140px;
+  right: 240px; */
+  width: 780px;
+  height: 680px;
+
+   background: radial-gradient(circle at center,
+    #b47196 10%,      /* locked */
+    #c46b9b 12%,     /* richer rose */
+    #de7f8f 20%,     /* clean coral */
+    #fea16e 34%,     /* juicy peach */
+    #f7a96b 46%,     /* warm tangerine */
+    #f5cba9 60%,     /* requested end */
+    #f9dcc4 74%,
+    rgba(249,220,196,0) 100%
+  );
+
+  filter: blur(85px) saturate(1.45);
+   /* less blur = more clarity */
+  opacity: 0.95;
+  pointer-events: none;
+}
+
+/* .page::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.035'/%3E%3C/svg%3E");
+  pointer-events: none;
+} */
+.spark-left {
+  left: 0;
+  transform: translate(-25%, -30%);
+}
+.spark-right {
+  right: 0;
+  transform: translate(135%, 50%);
+}
+/* .spark-1 { top: -200px; }
+.spark-2 { top: 100px; }
+.spark-3 { top: 1400px; }
+.spark-4 { top: 2100px; } */

@@ -1,0 +1,96 @@
+.ide-container{
+     margin-left: 11%;
+    /* margin-top: 5%; */
+    width: 1200px;
+    height:400px;
+     border-radius: 25px;
+     /* padding-top: 80px;
+    padding-bottom: 80px; */
+    background-image: linear-gradient(90deg, #FFCB6B, #3D8BFF);
+    transition: all 0.3s;
+    display: flex;
+     align-items: center;
+     justify-content: center;
+}
+.ide-container:hover{
+     padding: 2px;
+    transform: scale(0.99);
+}
+.ide-content{
+     width: 100%;
+     height: 100%;
+     background-color: #e7e7e6;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:70px;
+    border-radius: 25px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.ide-content:hover{
+     transform: none;
+}
+.ide-title{
+    color: #ABA5B5;
+    font-weight: 500;
+    font-size: 22px;
+}
+.ide-icons-row{
+    display: flex;
+    gap: 40px;
+}
+.ide-tech-card{
+    /* box-sizing: border-box; */
+    padding: 10px;
+    position: relative;
+}
+.ide-icon-1{
+  width: 85px !important;
+  /* border: 1px solid red; */
+  /* padding-bottom: 12px; */
+
+}
+.ide-tech-icon{
+  width: 60px;
+    height: auto;
+    /* border: 1px solid red; */
+}
+.ide-tech-tooltip{
+    position: absolute;
+    bottom: 120%;
+    left: 50%;
+    transform: translateX(-50%) scale(0.8);
+   background: linear-gradient(90deg, #FF0F7B, #F89B29);
+    color: white;
+    padding: 6px 12px;
+    border-radius: 999px;
+    font-size: 12px;
+    white-space: nowrap;
+    opacity: 0;
+    transition: 0.25s ease;
+}
+.ide-tech-tooltip::after{
+    content: "";
+    position: absolute;
+    top:100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 6px;
+    border-style: solid;
+    border-color: #F89B29 transparent transparent transparent;
+}
+.ide-tech-card:hover .ide-tech-tooltip{
+    opacity: 1;
+    transform: translateX(-50%) scale(1);
+}
+.ide-tech-card:hover {
+  transform: translateY(-5px);
+}
+
+ /* .ide-tech-card:hover .ide-tech-icon {
+  transform: scale(1.2);
+  filter: drop-shadow(0 0 10px rgba(255,122,24,0.6));
+} */

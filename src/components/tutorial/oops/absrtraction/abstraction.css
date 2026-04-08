@@ -1,0 +1,43 @@
+.abs-container {
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 12px;
+}
+
+.abs-heading {
+  color: #2f215f;
+  font-weight: 600;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.abs-subheading {
+  color: #215f53;
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 15px;
+  margin-top: 20px;
+}
+
+.abs-text {
+  color: #6B7280;
+  line-height: 2;
+}
+
+.abs-list-number {
+  list-style: decimal;
+  line-height: 2;
+  color: #6B7280;
+  margin-left: 20px;
+}
+
+.abs-list-bullet {
+  list-style: disc;
+  line-height: 2;
+  color: #6B7280;
+  margin-left: 20px;
+}
+
+.abs-space {
+  margin-top: 40px;
+}

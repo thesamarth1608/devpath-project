@@ -1,0 +1,127 @@
+.devpath-social-card-container{
+    width: 1200px;
+     height: 360px;
+    background-image: linear-gradient(90deg, #FFCB6B, #3D8BFF);
+ border-radius: 25px;
+ transition: all .3s;
+ margin-top: 100px;
+ margin-left: 11%;
+     margin-bottom: 50px;
+      display: flex;
+     align-items: center;
+     justify-content: center;
+     
+}
+.devpath-social-card-container:hover{
+    /* box-shadow:
+    0 15px 40px rgba(255, 15, 123, 0.25),
+    0 20px 60px rgba(248, 155, 41, 0.25); */
+     /* box-shadow: 0 8px 20px rgba(255, 111, 80, 0.22); */
+    padding: 2px;
+    transform: scale(0.99);
+    /* filter: drop-shadow(0 20px 50px rgba(255, 111, 80, 0.4)); */
+}
+.devpath-socialproofcard{
+    /* position: relative; */
+    /* background-color: rgb(91, 88, 83); */
+    background-color: #e7e7e6;
+    color: rgb(77, 29, 29);
+    /* border: 1px solid rgb(13, 8, 8); */
+    border-radius: 25px;
+     
+     width: 100%;
+     height: 100%;
+     display: inline-block;
+     display: flex;
+     align-items: center;
+     /* flex-direction: column; */
+     justify-content: center;
+     gap: 30px;
+     position: relative;
+     /* background-color: red; */
+     /* cursor: pointer; */
+     /* transform: 0.3s ease; */
+     /* border: 3px solid transparent; */
+}
+.devpath-socialproofcard:hover{
+ transform: none;
+ /* border-radius: 20px; */
+}
+.devpath-socialproofcard::after{
+    /* border: 1px solid red; */
+    content: "Soicial Subscriber";
+    position: absolute;
+     color: rgba(35, 14, 78, 0.907);
+    font-weight: 600;
+    font-size: 24px;
+    /* left: 20px; */
+     /* width: 50%; */
+  /* height: 3px; */
+  /* background: orange; */
+  /* bottom: -5px;*/
+  left: 20px; 
+  top: 20px;
+}
+.social-header{
+
+}
+.social-platform-card{
+    width: 200px;
+    height: fit-content;
+    padding: 20px;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    /* border-radius: 10px; */ border: 1.5px solid transparent;
+  border-radius: 14px;
+  background: 
+    linear-gradient(#e7e7e6, #e7e7e6) padding-box,
+    linear-gradient(90deg, #FF0F7B, #F89B29) border-box;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    /* color: blue; */
+}
+.social-stat-value{
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: rgba(25, 24, 57, 0.582);
+}
+.social-platfom-card{
+    border-radius: 15px;
+}
+.social-platform-icon1{
+    width: 35px;
+    /* height: 50px; */
+    height: fit-content;
+    /* border: 1px solid black; */
+    object-fit: contain;
+    /* position: relative; */
+}
+.social-platform-icon2{
+    width: 30px;
+    /* height: 50px; */
+    height: fit-content;
+    /* border: 1px solid black; */
+    object-fit: contain;
+}
+.social-platform-icon3{
+    width: 35px;
+    /* height: 50px; */
+    height: fit-content;
+    /* border: 1px solid black; */
+    object-fit: contain;
+}
+.social-platform-icon4{
+    width: 30px;
+    /* height: 50px; */
+    height: fit-content;
+    /* border: 1px solid black; */
+    object-fit: contain;
+}
+.social-icon-img{
+    width: 100%;
+    /* position: absolute; */
+    /* height: 100%; */
+}

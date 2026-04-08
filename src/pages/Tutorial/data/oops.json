@@ -1,0 +1,7 @@
+[ { "id": 1, "title": "what is OOPs", "slug":"what-is-oop", "content": "what is oops...."},
+  { "id": 2, "title": "Encapsulation","slug":"encapsulation", "content": "Class is blueprint..." },
+  { "id": 3, "title": "Implemnting Encapsulation","slug":"implement-encap", "content": "Class is blueprint..." },
+  { "id": 4, "title": "Inheritance","slug":"inheritance", "content": "Class is blueprint..." },
+  { "id": 5, "title": "Polymorphism","slug":"polymorphism", "content": "Many forms..." },
+  { "id": 6, "title": "Abstraction","slug":"abstraction", "content": "Many forms..." }
+]

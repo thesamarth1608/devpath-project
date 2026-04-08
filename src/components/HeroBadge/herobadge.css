@@ -1,0 +1,15 @@
+.hero-badge-container{
+margin-left: 300px;
+margin-top: 450px;
+/* border: 1px solid red; */
+position: absolute;
+}
+.hero-badge span{
+    font-size: 70px;
+    /* color: rgb(151, 121, 31); */
+    font-weight: 700;
+ background: linear-gradient(90deg, #5EDEEF, #DCE956, #E98FC0);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+    
+}

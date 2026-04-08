@@ -1,0 +1,64 @@
+{
+    "courses":[
+         {
+          "id": 1,
+          "name": "OOPs",
+          "img": "src/assets/Images/thumbnails/OOP.jpg"
+          },
+         {
+            "id": 2,
+            "name": "HTML",
+            "img": "src/assets/Images/thumbnails/HTML.jfif"
+          },
+          {
+            "id": 2,
+            "name": "CSS",
+            "img": "src/assets/Images/thumbnails/css.png"
+          },
+          {
+            "id": 3,
+            "name": "JavaScript",
+            "img": "src/assets/Images/thumbnails/javascript.png"
+          },
+          {
+            "id": 4,
+            "name": "React",
+            "img": "src/assets/Images/thumbnails/react.jpg"
+          },
+          {
+            "id": 6,
+            "name": "Angular",
+            "img": "src/assets/Images/thumbnails/angular.png"
+          },
+          {
+            "id": 7,
+            "name": "SQL",
+            "img": "src/assets/Images/thumbnails/SQL2.jpg"
+          },
+          {
+            "id":8,
+            "name": "OPERATING SYSTEM",
+            "img":  "src/assets/Images/thumbnails/Operating System.webp"
+          },
+          {
+            "id": 9,
+            "name": "cpp",
+            "img": "src/assets/Images/thumbnails/css.png"
+          },
+          {
+            "id": 10,
+            "name": "Java",
+            "img":  "src/assets/Images/thumbnails/JAVA.png"
+          },
+          {
+            "id": 11,
+            "name": "Frontend",
+            "img": "src/assets/Images/thumbnails/frontend.jpg"
+          },
+          {
+            "id": 12,
+            "name": "Spring",
+            "img": "src/assets/Images/thumbnails/springFramwork.webp"
+          }
+    ]
+}

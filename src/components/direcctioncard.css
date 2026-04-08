@@ -1,0 +1,63 @@
+.hover3d-container {
+  position: relative;
+  margin-left: 11%;
+    margin-top: 5%;
+    width: 1200px;
+    border-radius: 25px;
+  perspective: 1000px;
+}
+
+.hover3d-card {
+  position: absolute;
+  inset: 0;
+  z-index: 5;
+  transition: transform 0.3s ease;
+  transform-style: preserve-3d;
+  box-shadow: 0 25px 40px rgba(0,0,0,0.3);
+  border-radius: 1rem;
+  background: white; 
+}
+
+/* Trigger zones */
+.hover3d-container > div:not(.hover3d-card) {
+  position: absolute;
+  width: 33.33%;
+  height: 33.33%;
+  z-index: 2;
+}
+
+/* Top row */
+.hover3d-container > div:nth-child(1) { top: 0; left: 0; }
+.hover3d-container > div:nth-child(2) { top: 0; left: 33.33%; }
+.hover3d-container > div:nth-child(3) { top: 0; right: 0; }
+
+/* Middle row */
+.hover3d-container > div:nth-child(4) { top: 33.33%; left: 0; }
+.hover3d-container > div:nth-child(5) { top: 33.33%; left: 33.33%; }
+.hover3d-container > div:nth-child(6) { top: 33.33%; right: 0; }
+
+/* Bottom row */
+.hover3d-container > div:nth-child(7) { bottom: 0; left: 0; }
+.hover3d-container > div:nth-child(8) { bottom: 0; left: 33.33%; }
+
+/* Hover effects */
+
+/* Top Left */
+.hover3d-container > div:nth-child(1):hover ~ .hover3d-card {
+  transform: rotateX(12deg) rotateY(-12deg);
+}
+
+/* Top Right */
+.hover3d-container > div:nth-child(3):hover ~ .hover3d-card {
+  transform: rotateX(12deg) rotateY(12deg);
+}
+
+/* Bottom Left */
+.hover3d-container > div:nth-child(7):hover ~ .hover3d-card {
+  transform: rotateX(-12deg) rotateY(-12deg);
+}
+
+/* Bottom Right */
+.hover3d-container > div:nth-child(8):hover ~ .hover3d-card {
+  transform: rotateX(-12deg) rotateY(12deg);
+}

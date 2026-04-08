@@ -1,0 +1,45 @@
+.encap-container{
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 12px;
+}
+
+.encap-heading{
+  color: #2f215f;
+  font-weight: 600;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+.encap-img{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 10%;
+}
+.encap-subheading{
+  color: #215f53;
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 15px;
+  margin-top: 20px;
+}
+
+.encap-text{
+  color: #6B7280;
+  line-height: 2;
+}
+
+.encap-list-number{
+  list-style: decimal;
+  line-height: 2;
+  color: #6B7280;
+}
+
+.encap-list-bullet{
+  list-style: circle;
+  line-height: 2;
+  color: #6B7280;
+}
+
+.encap-space{
+  margin-top: 40px;
+}
