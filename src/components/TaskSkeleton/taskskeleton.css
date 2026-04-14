@@ -1,0 +1,44 @@
+.skeleton-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px;
+  margin: 8px 0;
+}
+
+.skeleton-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.skeleton-circle {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #e5e7eb;
+  animation: shimmer 1.5s infinite;
+}
+
+.skeleton-text {
+  width: 180px;
+  height: 12px;
+  border-radius: 6px;
+  background: #e5e7eb;
+  animation: shimmer 1.5s infinite;
+}
+
+.skeleton-btn {
+  width: 60px;
+  height: 28px;
+  border-radius: 6px;
+  background: #e5e7eb;
+  animation: shimmer 1.5s infinite;
+}
+
+/* 🔥 shimmer effect (better than pulse) */
+@keyframes shimmer {
+  0% { opacity: 0.5; }
+  50% { opacity: 1; }
+  100% { opacity: 0.5; }
+}

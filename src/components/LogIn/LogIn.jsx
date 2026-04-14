@@ -6,6 +6,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { logout } from '../../features/auth/authSlice';
 import { NavLink } from 'react-router-dom';
+// import { toast } from 'react-toastify';
 
 const LogIn = () => {
   const [showDropdown, setShowDropdown] = useState(false);
@@ -18,12 +19,15 @@ const LogIn = () => {
     navigate("/login");
 
   }
+//   const testToast = () => {
+//   toast.success("Bhaiii toast working 🚀");
+// };
   return(
     <div className='LogIn-wrapper'>
       {
         !user ? (
-          <div className='user-wrapper'>
-        <NavLink to="/login" className='user-name-tag'><span>Login</span></NavLink>
+          <div  className='user-wrapper'>
+        <div className='user-name-tag'><span>Login</span></div>
       </div>)
       : 
       (<div className='LogIn-wrapper'>

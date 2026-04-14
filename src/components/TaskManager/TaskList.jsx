@@ -2,16 +2,39 @@ import React, { useState } from 'react'
 import { useSelector } from 'react-redux';
 import TaskItem from './TaskItem';
 import './tasklist.css';
+import useDebounce from '../../hooks/useDebounce';
+import TaskSkeleton from '../TaskSkeleton/TaskSkeleton';
 
 const TaskList = ({ setEditTask}) => {
   const [search, setSearch] = useState("");
 
-     const tasks = useSelector(state => state.tasks.tasks);
+     const { tasks, loadingGet, error } = useSelector(
+  (state) => state.tasks
+);
+    
+const debouncedSearch = useDebounce(search, 500);
 
 const filteredTasks = tasks.filter((task) =>
-  task.title.toLowerCase().includes(search.trim().toLowerCase())
+  task.title.toLowerCase().includes(debouncedSearch.trim().toLowerCase())
 );
-console.log((tasks), "tasks")
+console.log((tasks), "tasks");
+// ⏳ LOADING
+if (loadingGet) {
+  return (
+    <div className="tasklist-wrapper">
+      <input className="searchInput" placeholder="Search tasks..." />
+
+      {Array(5).fill(0).map((_, i) => (
+        <TaskSkeleton key={i} />
+      ))}
+    </div>
+  );
+}
+
+// ❌ ERROR
+if (error) {
+  return <p style={{ color: "red" }}>❌ {error}</p>;
+}
   return (
     
     <div className='tasklist-wrapper'>

@@ -8,24 +8,21 @@ import CircularProgress from "../../components/CircularProgress/CircularProgress
 import TaskInput from "../../components/TaskManager/TaskInput";
 import TaskList from "../../components/TaskManager/TaskList";
 import { getTasks } from "../../features/task/taskThunks";
+import useAuth from "../../hooks/useAuth";
+import useFetchTasks from "../../hooks/useFetchTask";
 
 const Dashboard = () => {
+  const user = useAuth();   // 🔐 auth check
+  useFetchTasks();  
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
   const [editTask, setEditTask] = useState(null);
-  const user = useSelector((state) => state.auth.currentUser);
+  // const user = useSelector((state) => state.auth.currentUser);
   const { courses, currentCourse, currentTopicIndex } = useSelector(
     (state) => state.course
   );
 
- useEffect(() => {
-  if (!user) {
-    navigate("/login");
-  } else {
-    dispatch(getTasks());
-  }
-}, [user, dispatch]);
 
   const handleLogout = () => {
     dispatch(logout());
@@ -79,7 +76,6 @@ const Dashboard = () => {
           <h1 className="dpDash-title">
             Welcome, {user?.name} 👋
           </h1>
-
           {/* <button
          className="dpDash-btn dpDash-completed"
          onClick={handleLogout}

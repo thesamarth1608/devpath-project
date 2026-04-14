@@ -10,7 +10,7 @@
   outline: none;
   font-size: 14px;
   color: #333;
-  width: 400px;
+  width: 600px;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
   
   /* Gradient border trick */
@@ -30,4 +30,47 @@
 /* Focus effect 🔥 */
 .searchInput:focus {
   box-shadow: 0 0 8px rgba(255, 126, 95, 0.5);
+}
+/* Toast body */
+.toast-update {
+  /* background: #e0f2fe !important; */
+  color: #075985 !important;
+  border: 1px solid #bae6fd;
+    /* color: #075985; */
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* 🔥 Progress bar */
+/* .toast-update-progress {
+  background: #0ea5e9 !important;
+} */
+.toast-update .Toastify__progress-bar {
+  background: #0ea5e9 !important;
+}
+/* ✅ ADD (Green) */
+.toast-add {
+  color: #065f46 !important;
+  border: 1px solid #bbf7d0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.toast-add .Toastify__progress-bar {
+  background: #22c55e !important;
+}
+
+/* ❌ DELETE (Red) */
+.toast-delete {
+  color: #7f1d1d !important;
+  border: 1px solid #fecaca;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.toast-delete .Toastify__progress-bar {
+  background: #ef4444 !important;
 }

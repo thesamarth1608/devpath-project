@@ -43,6 +43,8 @@
     /* background: linear-gradient(135deg, #FFDEE9, #B5FFFC, #85FFBD, #FFEE93); */
      /* background: linear-gradient(135deg, #7F00FF, #E100FF, #00FFE5); */
      background: linear-gradient(90deg, #FF0F7B, #F89B29);  
+     outline: none;
+     border: none;
 }
 .user-name-tag:hover{
     transform: scale(1.03);

@@ -6,8 +6,10 @@ const BASE_URL = "http://localhost:5000/tasks";
 export const getTasks = createAsyncThunk(
   "tasks/get",
   async () => {
-    const res = await fetch(BASE_URL);
-    return res.json();
+   const res = await fetch("http://localhost:5000/tasks");
+  if (!res.ok) throw new Error("Failed to fetch tasks");
+  await new Promise((resolve)=>setTimeout(resolve, 5000));
+  return await res.json();
   }
 );
 
@@ -21,7 +23,8 @@ export const addTaskAsync = createAsyncThunk(
         "Content-Type": "application/json"
       },
       body: JSON.stringify(task)
-    });
+    }); 
+     if (!res.ok) throw new Error("Failed to add task");
      const data = await res.json(); // ✅ IMPORTANT
     return data; // ✅ correct payload
   }
@@ -38,7 +41,8 @@ export const updateTaskAsync = createAsyncThunk(
       },
       body: JSON.stringify(task)
     });
-    return res.json();
+     if (!res.ok) throw new Error("Failed to update task");
+    return await res.json();
   }
 );
 
@@ -46,9 +50,10 @@ export const updateTaskAsync = createAsyncThunk(
 export const deleteTaskAsync = createAsyncThunk(
   "tasks/delete",
   async (id) => {
-    await fetch(`${BASE_URL}/${id}`, {
+    const res = await fetch(`${BASE_URL}/${id}`, {
       method: "DELETE"
     });
+     if (!res.ok) throw new Error("Failed to delete task");
     return id;
   }
 );

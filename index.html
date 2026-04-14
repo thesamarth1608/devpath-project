@@ -2,12 +2,131 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>devpath</title>
+    <title>DevPath</title>
+
+    <style>
+      /* 🔥 FULL SCREEN LOADER */
+      .app-loader {
+        height: 100vh;
+        display: flex;
+        /* flex-direction: column; */
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        background-color: #e7e7e6;
+        color: #0f172a;
+        font-family: sans-serif;
+      }
+
+      /* 🔥 LOGO */
+      .loader-logo {
+        /* animation: zoomIn 1.2s ease forwards; */
+        animation: zoomRotate 1.5s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+      }
+
+      .loader-logo svg {
+        width: 120px;
+        height: 120px;
+        display: block;
+  filter: drop-shadow(0 10px 25px rgba(0,0,0,0.15));
+      }
+
+      /* 🔥 TEXT */
+      .loader-text {
+        margin-top: 15px;
+        font-size: 135px;
+        font-weight: 700;
+
+        background: linear-gradient(
+          90deg,
+          #ff4d8d,
+          #ff7a18,
+          #ffb347,
+          #ff4d8d
+        );
+        background-size: 200% 200%;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+        /* animation: zoomIn 1.2s ease forwards; */
+        animation: zoomRotate 1.5s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+        /* animation-delay: 0.1s; */
+        /* opacity: 0; */
+      }
+
+      /* 🔥 ANIMATIONS */
+      @keyframes zoomRotate {
+  0% {
+    transform: scale(0.2) rotate(-30deg);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.1) rotate(10deg);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+    opacity: 1;
+  }
+}
+      @keyframes zoomIn {
+        0% {
+          transform: scale(0.3);
+          opacity: 0;
+        }
+        100% {
+          transform: scale(1);
+          opacity: 1;
+        }
+      }
+
+      @keyframes fadeIn {
+        to {
+          opacity: 1;
+        }
+      }
+
+      @keyframes candyFlow {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+      }
+    </style>
   </head>
+
   <body>
-    <div id="root"></div>
+    <div id="root">
+
+      <div class="app-loader">
+
+        <!-- 🔥 CENTER LOGO -->
+        <div class="loader-logo">
+          <svg viewBox="0 0 24 24">
+            <defs>
+              <linearGradient id="slateFlow" x1="0" y1="0" x2="24" y2="24">
+                <stop offset="0%" stop-color="#0f172a" />
+                <stop offset="35%" stop-color="#334155" />
+                <stop offset="65%" stop-color="#64748b" />
+                <stop offset="100%" stop-color="#94a3b8" />
+              </linearGradient>
+            </defs>
+
+            <g stroke="url(#slateFlow)" fill="none" stroke-width="4.5">
+              <path d="M16 3h5v5" />
+              <path d="M8 3H3v5" />
+              <path d="M12 22v-8.3a4 4 0 0 0-1.172-2.872L3 3" />
+              <path d="m15 9 6-6" />
+            </g>
+          </svg>
+        </div>
+
+        <!-- 🔥 TEXT -->
+        <h2 class="loader-text">DevPath</h2>
+
+      </div>
+    </div>
+
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
