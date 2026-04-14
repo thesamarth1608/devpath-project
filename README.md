@@ -44,9 +44,9 @@ This project combines **Task Management, Authentication, and Course Management**
 - 🎨 CSS
 - 🔄 JSON Server (Mock Backend)
 - 🧠 Custom Hooks
-
-```
+---
 ## 📂 Project Structure
+```
 src/
 │── components/
 |───|tutorial/
@@ -91,20 +91,23 @@ src/
 
 👉 GitHub: https://github.com/thesamarth1608/devpath-project
 
+---
+
 ## 🚀 Getting Started
 
 ### 1️⃣ Clone the repository
----bash
+```bash
 git clone https://github.com/thesamarth1608/devpath-project.git
+```
+----
+### 🔮 Future Improvements
+- 🔐 JWT / Firebase Authentication
+- 🌙 Dark Mode
+- 🔄 Undo Delete Feature
+- 📄 Pagination / Infinite Scroll
+- 🌍 Backend Integration (`Node.js` + `MongoDB`)
+- 📊 Course progress tracking
 
-🔮 Future Improvements
-🔐 JWT / Firebase Authentication
-🌙 Dark Mode
-🔄 Undo Delete Feature
-📄 Pagination / Infinite Scroll
-🌍 Backend Integration (Node.js + MongoDB)
-📊 Course progress tracking
-
-
-🙌 Author
-Tejal (bhaiii 😎)
+---
+### 🙌 Author
+-Samarth (bhaiii 😎)
