@@ -64,4 +64,4 @@ toast.success("Task deleted", {
   )
 }
 
-export default TaskItem
+export default React.memo(TaskItem);

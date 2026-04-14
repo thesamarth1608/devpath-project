@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useMemo, useState } from 'react'
 import { useSelector } from 'react-redux';
 import TaskItem from './TaskItem';
 import './tasklist.css';
@@ -13,10 +13,23 @@ const TaskList = ({ setEditTask}) => {
 );
     
 const debouncedSearch = useDebounce(search, 500);
-
-const filteredTasks = tasks.filter((task) =>
-  task.title.toLowerCase().includes(debouncedSearch.trim().toLowerCase())
-);
+const filteredTasks = useMemo(() => {
+  return tasks.filter(task =>
+    task.title.toLowerCase().includes(debouncedSearch.trim().toLowerCase())
+  );
+}, [tasks, debouncedSearch]);
+// const filteredTasks = tasks.filter((task) =>
+//   task.title.toLowerCase().includes(debouncedSearch.trim().toLowerCase())
+// );
+const taskItems = useMemo(() => {
+  return filteredTasks.map(task => (
+    <TaskItem 
+      key={task.id} 
+      task={task} 
+      setEditTask={setEditTask} 
+    />
+  ));
+}, [filteredTasks, setEditTask]); // ✅ dependency add
 console.log((tasks), "tasks");
 // ⏳ LOADING
 if (loadingGet) {
@@ -48,11 +61,8 @@ if (error) {
     <div className='dpTask-list'>
       {filteredTasks.length === 0 ? (
   <p>No tasks found</p>
-) : (
-  filteredTasks.map(task => (
-    <TaskItem key={task.id} task={task} setEditTask={setEditTask} />
-  ))
-)}
+) : (taskItems)
+}
     </div></div>
   )
 }
