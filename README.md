@@ -19,10 +19,13 @@ This project combines **Task Management, Authentication, and Course Management**
 
 ---
 
-### 📚 Course Management
-- Add / Fetch / Manage courses
-- Redux Toolkit slice-based architecture
-- Scalable structure for future backend integration
+### 📚 Course Learning System
+
+- 📖 Structured learning system with predefined courses
+- 🎯 Users can pick any course and track their progress
+- 💾 Progress (current topic & index) is persisted across sessions
+- 🔄 Resume learning seamlessly after login
+- 🧠 Managed using Redux Toolkit for scalable state handling
 
 ---
 
