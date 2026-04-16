@@ -69,13 +69,10 @@ It demonstrates real-world frontend development practices including scalable fol
 ### ✅ Task Manager
 ![Tasks](src/assets/screenshots/task.png)
 
-> Tasks are user-specific and dynamically fetched based on logged-in user.
-
-### 📚 Course Learning
-![Course](src/assets/screenshots/courses.png)
+### 📚 Courses
+![Courses](src/assets/screenshots/courses.png)
 
 ---
-
 ## 🧩 Architecture Highlights
 
 - 👥 User-based task filtering (multi-user support)
