@@ -64,15 +64,15 @@ It demonstrates real-world frontend development practices including scalable fol
 ## 📸 Screenshots
 
 ### 🏠 Dashboard
-![Dashboard](assets/Images/screenshots/dashboard.png)
+![Dashboard](src/assets/screenshots/dashboard.png)
 
 ### ✅ Task Manager
-![Tasks](assets/Images/screenshots/tasks.png)
+![Tasks](src/assets/screenshots/task.png)
 
 > Tasks are user-specific and dynamically fetched based on logged-in user.
 
 ### 📚 Course Learning
-![Course](assets/Images/screenshots/course.png)
+![Course](src/assets/screenshots/courses.png)
 
 ---
 
