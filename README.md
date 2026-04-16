@@ -64,13 +64,13 @@ It demonstrates real-world frontend development practices including scalable fol
 ## 📸 Screenshots
 
 ### 🏠 Dashboard
-![Dashboard](src/assets/screenshots/dashboard.png)
+![Dashboard](src/assets/Images/screenshots/dashboard.png)
 
 ### ✅ Task Manager
-![Tasks](src/assets/screenshots/task.png)
+![Tasks](src/assets/Images/screenshots/task.png)
 
 ### 📚 Courses
-![Courses](src/assets/screenshots/courses.png)
+![Courses](src/assets/Images/screenshots/courses.png)
 
 ---
 ## 🧩 Architecture Highlights
