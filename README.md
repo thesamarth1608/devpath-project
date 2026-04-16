@@ -2,6 +2,8 @@
 
 > A scalable React application demonstrating real-world frontend architecture and performance optimization techniques.
 
+---
+
 ## 🚀 Project Overview
 
 DevPath is a modern React application built using React and Redux Toolkit that combines task management, course learning, and authentication into a single platform.
@@ -10,6 +12,7 @@ Users can manage daily tasks, explore predefined learning courses, and track the
 
 It demonstrates real-world frontend development practices including scalable folder structure, custom hooks, async state handling, and user-centric UI/UX.
 
+👉 The application also supports a **multi-user environment**, where each user can manage their own tasks independently with proper data separation.
 
 ---
 
@@ -34,13 +37,17 @@ It demonstrates real-world frontend development practices including scalable fol
 ---
 
 ### ✅ Task Management
+
 - Add, Edit, Delete Tasks (CRUD)
+- 👥 Multi-user task support (tasks linked to individual users)
 - 🔍 Search Tasks with Debounce (optimized performance)
 - ⚡ Fast & responsive UI
 - 🧠 Custom Hooks (`useAuth`, `useFetchTask`, `useDebounce`)
 - ⏳ Skeleton Loader for better UX
 - 📦 Redux Toolkit for state management
 - 🚀 Optimized rendering using `useMemo` and `React.memo`
+
+👉 Each task is associated with a specific user, ensuring user-specific data handling.
 
 ---
 
@@ -51,50 +58,64 @@ It demonstrates real-world frontend development practices including scalable fol
 - 🎨 CSS
 - 🔄 JSON Server (Mock Backend)
 - 🧠 Custom Hooks
+
 ---
+
+## 🧩 Architecture Highlights
+
+- 👥 User-based task filtering (multi-user support)
+- 🔗 API filtering using query params (`?userId=`)
+- 🧠 Separation of concerns using slices & custom hooks
+- 📦 Scalable folder structure
+
+---
+
 ## 📂 Project Structure
-```
+
+```bash
 src/
 │── components/
-|───|tutorial/
-│    ├── TutContent.jsx/
-│    ├── TutSidebar.jsx/
-|
-|───|TaskManager/
-│    ├── TaskItem/
-│    ├── TaskList/
-│    ├── TaskSkeleton/
+│   ├── tutorial/
+│   │   ├── TutContent.jsx
+│   │   ├── TutSidebar.jsx
+│   │
+│   ├── TaskManager/
+│   │   ├── TaskItem.jsx
+│   │   ├── TaskList.jsx
+│   │   ├── TaskSkeleton.jsx
 │
 │── hooks/
-│ ├── useAuth.js
-│ ├── useDebounce.js
-│ ├── useFetchTask.js
+│   ├── useAuth.js
+│   ├── useDebounce.js
+│   ├── useFetchTask.js
 │
 │── features/
-│ ├── auth/
-│ ├── tasks/
-│ ├── course/
+│   ├── auth/
+│   ├── tasks/
+│   ├── course/
 │
 │── pages/
-| ├── Home.jsx
-│ ├── Login.jsx
-│ ├── Dashboard.jsx
-| ├── Tutorial.jsx
+│   ├── Home.jsx
+│   ├── Login.jsx
+│   ├── Dashboard.jsx
+│   ├── Tutorial.jsx
 │
 │── App.jsx
 │── main.jsx
-
 ```
+
+---
 
 ## ⚡ Performance Optimizations
 
-- Memoized task filtering using `useMemo`
-- Optimized component rendering using `React.memo`
-- Debounced search input
-- Efficient state management with Redux Toolkit
+- 🚀 Memoized task filtering using `useMemo`
+- 🧠 Optimized component rendering using `React.memo`
+- ⏱️ Debounced search input
+- 📉 Efficient state management with Redux Toolkit
 
 ---
-🌐 Repository
+
+## 🌐 Repository
 
 👉 GitHub: https://github.com/thesamarth1608/devpath-project
 
@@ -106,16 +127,41 @@ src/
 ```bash
 git clone https://github.com/thesamarth1608/devpath-project.git
 ```
-----
+
+### 2️⃣ Navigate to project
+```bash
+cd devpath-project
+```
+
+### 3️⃣ Install dependencies
+```bash
+npm install
+```
+
+### 4️⃣ Start JSON Server
+```bash
+npx json-server --watch db.json --port 5000
+```
+
+### 5️⃣ Run the app
+```bash
+npm run dev
+```
+
+---
+
 ## 🧠 Key Learnings
 
 - ⚛️ Gained strong understanding of React Hooks (useState, useEffect, useMemo, useCallback)
-- 🚀 Implemented performance optimization using useMemo and React.memo
+- 🚀 Implemented performance optimization using `useMemo` and `React.memo`
 - 🧩 Built scalable state management using Redux Toolkit slices
 - ♻️ Designed reusable custom hooks for cleaner logic separation
+- 👥 Implemented multi-user data handling logic
 
-----
-### 🔮 Future Improvements
+---
+
+## 🔮 Future Improvements
+
 - 🔐 JWT / Firebase Authentication
 - 🌙 Dark Mode
 - 🔄 Undo Delete Feature
@@ -124,5 +170,13 @@ git clone https://github.com/thesamarth1608/devpath-project.git
 - 📊 Course progress tracking
 
 ---
-### 🙌 Author
--Samarth (bhaiii 😎)
+
+## 🙌 Author
+
+- Samarth (bhaiii 😎)
+
+---
+
+## ⭐ Show Your Support
+
+If you like this project, give it a ⭐ on GitHub!
