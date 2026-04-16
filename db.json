@@ -1,74 +1,16 @@
 {
   "tasks": [
     {
-      "title": "ttttrkrkkrkrkkr",
+      "title": "tejal1 garud",
       "completed": false,
-      "id": "NkqDNVXXPSw"
+      "userId": "garudtejal1222@gmail.com",
+      "id": "PKIBk8YKUSE"
     },
     {
-      "title": "jtjjjgg",
+      "title": "vibhav",
       "completed": false,
-      "id": "zCy-dp93DiI"
-    },
-    {
-      "title": "kgogo",
-      "completed": true,
-      "id": "GZlBC9jxpo4"
-    },
-    {
-      "title": "jrjjrr",
-      "completed": true,
-      "id": "9EQw-Fyi7rI"
-    },
-    {
-      "title": "jjrjjr",
-      "completed": false,
-      "id": "aLmJmZRbCIg"
-    },
-    {
-      "title": "rjjjr",
-      "completed": false,
-      "id": "ucWxxfFC3HE"
-    },
-    {
-      "title": "fjjjfff",
-      "completed": false,
-      "id": "dNFsp_XJOy0"
-    },
-    {
-      "title": "rjrjjjrr",
-      "completed": false,
-      "id": "S_LBNKM6bTg"
-    },
-    {
-      "title": "tttt",
-      "completed": false,
-      "id": "p3VD9Zr6PdQ"
-    },
-    {
-      "title": "fffmf",
-      "completed": false,
-      "id": "_FmEK0MZApM"
-    },
-    {
-      "title": "welcome",
-      "completed": false,
-      "id": "6-ERUiXSLG8"
-    },
-    {
-      "title": "kkkkkk",
-      "completed": false,
-      "id": "zwjyeJn3Czs"
-    },
-    {
-      "title": "abscjf",
-      "completed": false,
-      "id": "2pyl9Z_0MxA"
-    },
-    {
-      "title": "kekeke",
-      "completed": false,
-      "id": "wf9jRMpaQCw"
+      "userId": "vaibhavdgarud@gmail.com",
+      "id": "MU3iVtadxXY"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

@@ -10,6 +10,7 @@ import TaskList from "../../components/TaskManager/TaskList";
 import { getTasks } from "../../features/task/taskThunks";
 import useAuth from "../../hooks/useAuth";
 import useFetchTasks from "../../hooks/useFetchTask";
+import { resetTasks } from "../../features/task/taskSlice";
 
 const Dashboard = () => {
   const user = useAuth();   // 🔐 auth check
@@ -27,6 +28,7 @@ const Dashboard = () => {
   const handleLogout = () => {
     dispatch(logout());
     dispatch(resetCourseState());
+    dispatch(resetTasks());
     navigate("/login", { replace: true });
   };
 

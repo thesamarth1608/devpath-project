@@ -18,6 +18,8 @@ const filteredTasks = useMemo(() => {
     task.title.toLowerCase().includes(debouncedSearch.trim().toLowerCase())
   );
 }, [tasks, debouncedSearch]);
+console.log("loading:", loadingGet);
+console.log("tasks:", tasks);
 // const filteredTasks = tasks.filter((task) =>
 //   task.title.toLowerCase().includes(debouncedSearch.trim().toLowerCase())
 // );
@@ -35,7 +37,10 @@ console.log((tasks), "tasks");
 if (loadingGet) {
   return (
     <div className="tasklist-wrapper">
-      <input className="searchInput" placeholder="Search tasks..." />
+      <input className="searchInput"
+  placeholder="Search tasks..."
+  value={search}   // ✅ add this
+  readOnly/>
 
       {Array(5).fill(0).map((_, i) => (
         <TaskSkeleton key={i} />
@@ -43,7 +48,6 @@ if (loadingGet) {
     </div>
   );
 }
-
 // ❌ ERROR
 if (error) {
   return <p style={{ color: "red" }}>❌ {error}</p>;

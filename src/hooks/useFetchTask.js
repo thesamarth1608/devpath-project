@@ -1,17 +1,16 @@
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux"
 import { getTasks } from "../features/task/taskThunks";
-getTasks
 
 const useFetchTasks = () => {
   const dispatch = useDispatch();
-  const { tasks, loadingGet } = useSelector((state) => state.tasks);
+  const { tasks, loadingGet, hasFetched} = useSelector((state) => state.tasks);
 
   useEffect(() => {
-    if (!loadingGet && tasks.length === 0) {
+    if (!loadingGet && !hasFetched) {
       dispatch(getTasks());
     }
-  }, [dispatch, loadingGet, tasks.length]);
+  }, [dispatch, loadingGet, hasFetched]);
 };
 
 export default useFetchTasks;

@@ -6,12 +6,18 @@ const initialState = {
   loadingAdd: false,
   loadingUpdate: false,
   loadingDeleteId: null,
-  error: null
+  error: null,
+  hasFetched: false
 };
 const taskSlice = createSlice({
   name: "tasks",
   initialState,
-  reducers: {},
+  reducers: {
+     resetTasks: (state) => {
+    state.tasks = [];
+    state.hasFetched = false;
+  }
+  },
 
   extraReducers: (builder) => {
     builder
@@ -23,6 +29,7 @@ const taskSlice = createSlice({
       })
       .addCase(getTasks.fulfilled, (state, action) => {
         state.loadingGet = false;
+         state.hasFetched = true;
         state.tasks = action.payload;
       })
       .addCase(getTasks.rejected, (state, action) => {
@@ -83,7 +90,7 @@ const taskSlice = createSlice({
       })
   }
 });
-
+export const { resetTasks } = taskSlice.actions;
 export default taskSlice.reducer;
 
 

@@ -6,6 +6,8 @@ import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { logout } from '../../features/auth/authSlice';
 import { NavLink } from 'react-router-dom';
+import { resetTasks } from '../../features/task/taskSlice';
+import { resetCourseState } from '../../features/course/courseSlice';
 // import { toast } from 'react-toastify';
 
 const LogIn = () => {
@@ -16,7 +18,11 @@ const LogIn = () => {
 
   const handleLogout = ()=>{
     dispatch(logout());
-    navigate("/login");
+    dispatch(resetTasks());
+    dispatch(resetCourseState());
+    navigate("/login", { replace: true });
+    
+    
 
   }
 //   const testToast = () => {
