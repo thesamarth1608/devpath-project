@@ -1,16 +1,40 @@
 {
   "tasks": [
     {
-      "title": "tejal1 garud",
-      "completed": false,
-      "userId": "garudtejal1222@gmail.com",
-      "id": "PKIBk8YKUSE"
-    },
-    {
       "title": "vibhav",
       "completed": false,
       "userId": "vaibhavdgarud@gmail.com",
       "id": "MU3iVtadxXY"
+    },
+    {
+      "title": "Learn React Hooks deeply",
+      "completed": true,
+      "userId": "garudtejal1222@gmail.com",
+      "id": "Xee-f5x3lsY"
+    },
+    {
+      "title": "Add multi-user task support",
+      "completed": false,
+      "userId": "garudtejal1222@gmail.com",
+      "id": "hab8RloAoYA"
+    },
+    {
+      "title": "Optimize performance using useMemo",
+      "completed": false,
+      "userId": "garudtejal1222@gmail.com",
+      "id": "8E6DbMTxOXg"
+    },
+    {
+      "title": "Complete JavaScript basics course",
+      "completed": false,
+      "userId": "garudtejal1222@gmail.com",
+      "id": "lrOS32qBp0A"
+    },
+    {
+      "title": "Implement debounce search feature",
+      "completed": false,
+      "userId": "garudtejal1222@gmail.com",
+      "id": "tgM9v0EP1nY"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
