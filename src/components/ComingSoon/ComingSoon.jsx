@@ -1,5 +1,5 @@
 import React from "react";
-import "./comingSoon.css";
+import "./comingsoon.css";
 
 const letters = [
   { char: "C", gradient: "linear-gradient(90deg, #F7EA60, #3CF2DE, #F774BB)"  },
