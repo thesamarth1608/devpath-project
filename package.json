@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "concurrently \"npm run dev:react\" \"npm run server\"",
     "dev:react": "vite",
-    "server": "json-server --watch db.json --port 5000",
+    "server": "json-server --watch db.json --port 10000",
     "build": "vite build",
     "preview": "vite preview"
   },
