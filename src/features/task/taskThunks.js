@@ -1,6 +1,6 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
 
-const BASE_URL = "http://localhost:5000/tasks";
+const BASE_URL = "https://devpath-project.onrender.com/tasks";
 
 // 📥 GET TASKS
 export const getTasks = createAsyncThunk(
