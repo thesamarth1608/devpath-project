@@ -18,8 +18,8 @@ const filteredTasks = useMemo(() => {
     task.title.toLowerCase().includes(debouncedSearch.trim().toLowerCase())
   );
 }, [tasks, debouncedSearch]);
-console.log("loading:", loadingGet);
-console.log("tasks:", tasks);
+// console.log("loading:", loadingGet);
+// console.log("tasks:", tasks);
 // const filteredTasks = tasks.filter((task) =>
 //   task.title.toLowerCase().includes(debouncedSearch.trim().toLowerCase())
 // );

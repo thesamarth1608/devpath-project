@@ -20,9 +20,7 @@ const LogIn = () => {
     dispatch(logout());
     dispatch(resetTasks());
     dispatch(resetCourseState());
-    navigate("/login", { replace: true });
-    
-    
+    navigate("/login", { replace: true }); 
 
   }
 //   const testToast = () => {
@@ -33,7 +31,7 @@ const LogIn = () => {
       {
         !user ? (
           <div  className='user-wrapper'>
-        <div className='user-name-tag'><span>Login</span></div>
+        <div className='user-name-tag' onClick={() => navigate("/login")}><span>Login</span></div>
       </div>)
       : 
       (<div className='LogIn-wrapper'>
