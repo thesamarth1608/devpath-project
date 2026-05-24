@@ -7,6 +7,7 @@ import { loadCourseState, resetCourseState } from '../../features/course/courseS
 import { login } from '../../features/auth/authSlice'
 import { useNavigate } from 'react-router-dom'
 import { setHydrating } from '../../store/store'
+import { toast } from "react-toastify";
 
 const LogInPage = () => {
     const [FormData, setFormData] = useState({
@@ -26,6 +27,10 @@ const LogInPage = () => {
     }
     const handleSubmit = (e)=>{
         e.preventDefault();
+        if (!FormData.name || !FormData.email || !FormData.password) {
+  toast.error("Name, Email and Password required ❌");
+  return;
+}
         const user = {
             id: FormData.email,
             password:FormData.password,
