@@ -1,8 +1,7 @@
 import React from 'react'
 import './tutorial.css'
 import Logo from '../../components/Logo/Logo'
-import ThumbNail from '../../assets/Images/thumbnails/OOP.jpg'
-import TutorialData from './tutorialData.json'
+import TutorialData from './tutorialData'
 import { NavLink } from 'react-router-dom'
 
 
