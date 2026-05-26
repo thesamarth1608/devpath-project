@@ -15,6 +15,13 @@ It demonstrates real-world frontend development practices including scalable fol
 👉 The application also supports a **multi-user environment**, where each user can manage their own tasks independently with proper data separation.
 
 ---
+🌐 Live Demo:
+https://devpath-project.vercel.app
+
+
+📂 GitHub Repository:  https://github.com/thesamarth1608/devpath-project
+
+---
 
 ## ✨ Features
 
@@ -125,11 +132,6 @@ src/
 - ⏱️ Debounced search input
 - 📉 Efficient state management with Redux Toolkit
 
----
-
-## 🌐 Repository
-
-👉 GitHub: https://github.com/thesamarth1608/devpath-project
 
 ---
 
