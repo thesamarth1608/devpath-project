@@ -185,7 +185,7 @@ npm run dev
 
 ## 🙌 Author
 
-- Samarth (bhaiii 😎)
+- Garud ( 😎)
 
 ---
 
