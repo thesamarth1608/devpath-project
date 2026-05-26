@@ -3,6 +3,7 @@ import './encapsulation.css'
 import { useDispatch, useSelector } from 'react-redux';
 import { CheckCircle } from "lucide-react";
 import { markComplete, nextTopic } from '../../../../features/course/courseSlice';
+import Encapimg from "../../../../../images/tutorial/Encapsulation.webp"
 const Encapsulation = () => {
      const dispatch = useDispatch();
     const { courses, currentCourse, currentTopicIndex } = useSelector((state) => state.course);
@@ -27,7 +28,7 @@ const Encapsulation = () => {
         components, preventing accidental modification of data. This concept is 
         often referred to as <b>data hiding</b>.
       </div>
-      <img className="encap-img" src='/images/tutorial/Encapsulation.webp'></img>
+      <img className="encap-img" src={Encapimg}></img>
       <h3 className="encap-subheading encap-space">Key Characteristics</h3>
     
       <ul className="encap-list-number">

@@ -3,6 +3,7 @@ import './whatisoops.css'
 import { useDispatch, useSelector } from 'react-redux';
 import { CheckCircle } from "lucide-react";
 import { markComplete, nextTopic } from '../../../../features/course/courseSlice';
+import whatoops from "../../../../../images/tutorial/oops1.gif"
 
 
 const WhatIsOops = () => {
@@ -13,7 +14,7 @@ const WhatIsOops = () => {
     <div className='whatoopscontainer'>
       <h2 className="oops-heading">What Is OOPs?</h2>
       <div className='oops-def'>In this series of articles, we will learn about the basics of OOPs. Object-Oriented Programming is a paradigm that provides many concepts, such as inheritance, data binding, polymorphism, etc. The programming paradigm where everything is represented as an object is known as a truly object-oriented programming language.</div>
-      <div className='oops-img-container-1'><img src='/images/tutorial/oops1.gif' alt='oops-gif'></img></div>
+      <div className='oops-img-container-1'><img src={whatoops} alt='oops-gif'></img></div>
       <h2 className='whyoops'>Why OOPS?</h2>
       <ul className='oops-list-1'>
         <li>

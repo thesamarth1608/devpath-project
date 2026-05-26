@@ -1,8 +1,8 @@
 import React, { useRef } from 'react'
 import './popularcoursescard.css'
-import popularcourses from './popularcourses.json'
 import ArrowBackIosNewOutlinedIcon from '@mui/icons-material/ArrowBackIosNewOutlined';
 import ArrowForwardIosOutlinedIcon from '@mui/icons-material/ArrowForwardIosOutlined';
+import popularcourses from './popularcourses'
 
 const PopularCoursesCard = () => {
      const scrollRef = useRef(null);
